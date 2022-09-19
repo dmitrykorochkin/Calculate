@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(53, 165, 152);
+}
+
+
+.calc {
+    font-family: 'Montserrat', sans-serif;
+    margin:100px auto;
+    width: 400px;
+    height:100%;
+    border-radius: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(156, 185, 154) 0%, rgb(31, 201, 170) 100%);
+    color: #fff;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 6px rgb(15, 15, 15);
+}
+
+.calc-screen {
+    height: 150px;
+    display: grid;
+    padding-right: 40px;
+    justify-items: end;
+    align-items:end;
+    
+}
+.calc-screen p {
+    font-size: 70px;
+    margin: 0;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(78, 78, 78);
+    text-align: center;
+    line-height: 70px;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.buttons {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    align-self: center;
+    grid-template-areas: 
+    "ce signs division multiplication"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equals"
+    "zero zero dot equals";
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+}
+
+.btn.equals {
+    grid-area: equals;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    background-color: rgb(34, 158, 135);
+}
+
